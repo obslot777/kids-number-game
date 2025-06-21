@@ -33,3 +33,4 @@ function checkNumber(button, num) {
 }
 
 setupGame();
+
