@@ -1,0 +1,31 @@
+body {
+  font-family: sans-serif;
+  text-align: center;
+  background: #f0f8ff;
+}
+
+#game {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-gap: 10px;
+  justify-content: center;
+  margin: 20px auto;
+}
+
+button {
+  font-size: 2em;
+  padding: 20px;
+  background: #add8e6;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+button.correct {
+  background: #90ee90;
+}
+
+#message {
+  font-size: 1.5em;
+  margin-top: 20px;
+}
