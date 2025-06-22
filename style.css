@@ -5,20 +5,24 @@ body {
 }
 
 #game {
-  display: grid;
-  grid-template-columns: repeat(3, 100px);
-  grid-gap: 10px;
-  justify-content: center;
+  position: relative;
+  width: 300px;
+  height: 400px;
   margin: 20px auto;
+  background: #e0ffff;
+  border: 2px solid #333;
+  overflow: hidden;
 }
 
 button {
+  position: absolute;
   font-size: 2em;
   padding: 20px;
   background: #add8e6;
   border: none;
-  border-radius: 10px;
+  border-radius: 50%;
   cursor: pointer;
+  transition: all 0.2s;
 }
 
 button.correct {
@@ -29,4 +33,3 @@ button.correct {
   font-size: 1.5em;
   margin-top: 20px;
 }
-

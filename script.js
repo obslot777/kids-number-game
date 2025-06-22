@@ -16,6 +16,17 @@ function setupGame() {
   numbers.forEach(num => {
     const button = document.createElement("button");
     button.textContent = num;
+
+    // ランダム座標を設定
+    const gameWidth = game.clientWidth - 70;  // ボタンサイズ考慮
+    const gameHeight = game.clientHeight - 70;
+
+    const randomX = Math.floor(Math.random() * gameWidth);
+    const randomY = Math.floor(Math.random() * gameHeight);
+
+    button.style.left = `${randomX}px`;
+    button.style.top = `${randomY}px`;
+
     button.addEventListener("click", () => checkNumber(button, num));
     game.appendChild(button);
   });
@@ -33,4 +44,3 @@ function checkNumber(button, num) {
 }
 
 setupGame();
-
